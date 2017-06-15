@@ -1,0 +1,12 @@
+﻿<SolutionConfiguration>
+  <Settings>
+    <AllowParallelTestExecution>True</AllowParallelTestExecution>
+    <MetricsExclusionList>
+      <Value>Compare.Tests\Compare.Tests.csproj</Value>
+      <Value>Combine.Tests\Compose.Tests.csproj</Value>
+      <Value>ParameterRebinder.Tests\ParameterRebinder.Tests.csproj</Value>
+      <Value>TestExpressions\TestExpressions.csproj</Value>
+    </MetricsExclusionList>
+    <SolutionConfigured>True</SolutionConfigured>
+  </Settings>
+</SolutionConfiguration>
