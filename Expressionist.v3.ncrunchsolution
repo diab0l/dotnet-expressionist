@@ -6,6 +6,7 @@
       <Value>Combine.Tests\Compose.Tests.csproj</Value>
       <Value>ParameterRebinder.Tests\ParameterRebinder.Tests.csproj</Value>
       <Value>TestExpressions\TestExpressions.csproj</Value>
+      <Value>Compose.Tests\Compose.Tests.csproj</Value>
     </MetricsExclusionList>
     <SolutionConfigured>True</SolutionConfigured>
   </Settings>

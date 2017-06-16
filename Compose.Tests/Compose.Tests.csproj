@@ -55,7 +55,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Combine\Compose.csproj">
+    <ProjectReference Include="..\Compose\Compose.csproj">
       <Project>{4e99a983-1272-4b8c-938f-91901ffaad44}</Project>
       <Name>Compose</Name>
     </ProjectReference>
