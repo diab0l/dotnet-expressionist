@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Expressionist.TestExpressions")]
+[assembly: AssemblyTitle("Expressionist.Reduce")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NorthIt")]
@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("a776dc34-6b64-4d43-bfc6-cf940558b064")]
+[assembly: Guid("174d5dea-fb94-4307-8006-3dbbf806ab8d")]
 
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

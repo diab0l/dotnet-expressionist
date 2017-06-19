@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compose", "Compose\Compose.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compose.Tests", "Compose.Tests\Compose.Tests.csproj", "{72136055-2D7C-4BF0-AA85-BD76CCC86584}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reduce", "Reduce\Reduce.csproj", "{174D5DEA-FB94-4307-8006-3DBBF806AB8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reduce.Tests", "Reduce.Tests\Reduce.Tests.csproj", "{288328F0-216A-4325-8419-AC7554C7BB85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{72136055-2D7C-4BF0-AA85-BD76CCC86584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72136055-2D7C-4BF0-AA85-BD76CCC86584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72136055-2D7C-4BF0-AA85-BD76CCC86584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{174D5DEA-FB94-4307-8006-3DBBF806AB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{174D5DEA-FB94-4307-8006-3DBBF806AB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{174D5DEA-FB94-4307-8006-3DBBF806AB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{174D5DEA-FB94-4307-8006-3DBBF806AB8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288328F0-216A-4325-8419-AC7554C7BB85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288328F0-216A-4325-8419-AC7554C7BB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288328F0-216A-4325-8419-AC7554C7BB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288328F0-216A-4325-8419-AC7554C7BB85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
