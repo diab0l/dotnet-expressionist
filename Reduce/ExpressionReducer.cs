@@ -1,10 +1,10 @@
-﻿namespace Expressionist.Reduce {
+﻿namespace Expressionist.Deflate {
     using System.Linq.Expressions;
 
-    public class ExpressionReducer : ExpressionVisitor {
-        private readonly ReductionKind kinds;
-
-        private ExpressionReducer(ReductionKind kinds) {
+    public class ExpressionSimplifier : ExpressionVisitor {
+        private readonly Simplification kinds;
+        
+        public ExpressionSimplifier(Simplification kinds) {
             this.kinds = kinds;
         }
 
@@ -34,8 +34,8 @@
             return Expression.MakeMemberAccess(body, member);
         }
 
-        public static T Reduce<T>(T expr, ReductionKind kinds) where T : Expression {
-            var visitor = new ExpressionReducer(kinds);
+        public static T Simplify<T>(T expr, Simplification kinds) where T : Expression {
+            var visitor = new ExpressionSimplifier(kinds);
 
             return (T)visitor.Visit(expr);
         }

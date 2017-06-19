@@ -7,8 +7,8 @@
     <ProjectGuid>{288328F0-216A-4325-8419-AC7554C7BB85}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Expressionist.Reduce.Tests</RootNamespace>
-    <AssemblyName>Expressionist.Reduce.Tests</AssemblyName>
+    <RootNamespace>Expressionist.Deflate.Tests</RootNamespace>
+    <AssemblyName>Expressionist.Deflate.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,9 +55,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Reduce\Reduce.csproj">
+    <ProjectReference Include="..\Deflate\Deflate.csproj">
       <Project>{174D5DEA-FB94-4307-8006-3DBBF806AB8D}</Project>
-      <Name>Reduce</Name>
+      <Name>Deflate</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

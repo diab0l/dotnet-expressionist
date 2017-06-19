@@ -7,8 +7,8 @@
     <ProjectGuid>{174D5DEA-FB94-4307-8006-3DBBF806AB8D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Expressionist.Reduce</RootNamespace>
-    <AssemblyName>Expressionist.Reduce</AssemblyName>
+    <RootNamespace>Expressionist.Deflate</RootNamespace>
+    <AssemblyName>Expressionist.Deflate</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,9 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExpressionReducer.cs" />
+    <Compile Include="ExpressionSimplifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReductionKind.cs" />
+    <Compile Include="Simplification.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,8 +1,8 @@
-﻿namespace Expressionist.Reduce {
+﻿namespace Expressionist.Deflate {
     using System;
 
     [Flags]
-    public enum ReductionKind {
-        RemoveUnneededCast
+    public enum Simplification {
+        Uncast
     }
 }

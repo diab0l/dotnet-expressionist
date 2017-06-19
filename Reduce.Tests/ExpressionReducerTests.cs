@@ -13,10 +13,9 @@
     }
 }
 
-namespace Reduce.Tests {
+namespace Expressionist.Deflate.Tests {
     using System;
     using System.Linq.Expressions;
-    using Expressionist.Reduce;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     using X;
@@ -25,7 +24,7 @@ namespace Reduce.Tests {
         [TestMethod]
         public void Reduce_Omits_Unneded_Cast() {
             var input = Expr2<Poco>();
-            var result = ExpressionReducer.Reduce(input, ReductionKind.RemoveUnneededCast);
+            var result = ExpressionSimplifier.Simplify(input, Simplification.Uncast);
             
             var hasConvert = NodeMatcher.Matches(result, x => x.NodeType == ExpressionType.Convert);
             var expected = false;
