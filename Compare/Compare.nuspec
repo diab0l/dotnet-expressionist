@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Marian Stramm</authors>
+    <licenseUrl>https://github.com/diab0l/dotnet-expressionist/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/diab0l/dotnet-expressionist</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright NorthIt 2017</copyright>
+    <tags>Expression Comparer</tags>
+  </metadata>
+</package>
