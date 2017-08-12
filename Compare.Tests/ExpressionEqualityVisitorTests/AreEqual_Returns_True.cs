@@ -21,6 +21,14 @@
         }
 
         [TestMethod]
+        public void Conditional() {
+            var lhs = TestExpressions.Conditional1();
+            var rhs = TestExpressions.Conditional1();
+
+            this.AreEqual_Returns_True_For(lhs, rhs);
+        }
+
+        [TestMethod]
         public void Constant() {
             var lhs = TestExpressions.Constant1();
             var rhs = TestExpressions.Constant1();

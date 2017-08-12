@@ -133,6 +133,40 @@
         }
 
         /// <summary>
+        ///     Creates a <see cref="ConditionalExpression"/>.
+        /// </summary>
+        /// <remarks>
+        ///     <code lang="C#"><![CDATA[
+        ///         a == b ? c : d
+        ///     ]]]></code>
+        /// </remarks>
+        /// <returns>A <see cref="ConditionalExpression"/>.</returns>
+        public static ConditionalExpression Conditional1() {
+            var test = Expression.Constant(true);
+            var ifTrue = Constant1();
+            var ifFalse = Constant2();
+
+            return Expression.Condition(test, ifTrue, ifFalse);
+        }
+
+        /// <summary>
+        ///     Creates a <see cref="ConditionalExpression"/>.
+        /// </summary>
+        /// <remarks>
+        ///     <code lang="C#"><![CDATA[
+        ///         a == b ? c : d
+        ///     ]]]></code>
+        /// </remarks>
+        /// <returns>A <see cref="ConditionalExpression"/>.</returns>
+        public static ConditionalExpression Conditional2() {
+            var test = Expression.Constant(false);
+            var ifTrue = Constant1();
+            var ifFalse = Constant2();
+
+            return Expression.Condition(test, ifTrue, ifFalse);
+        }
+
+        /// <summary>
         ///     Creates a <see cref="ConstantExpression" />.
         /// </summary>
         /// <remarks>

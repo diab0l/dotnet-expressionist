@@ -908,17 +908,17 @@
         /// </summary>
         private enum ExpressionEqualityVisitorMode {
             /// <summary>
-            ///     Save all the processed parts into a processing queue
+            ///     Store the processed parts in a processing queue
             /// </summary>
             LoadRhs,
 
             /// <summary>
-            ///     Compare the processed part to the next element in the processing queue
+            ///     Compare processed parts to elements from the processing queue
             /// </summary>
             Equals,
 
             /// <summary>
-            ///     Calculates the hashcode for the processed part
+            ///     Calculates the hashcode for the processed parts
             /// </summary>
             GetHashCode
         }
