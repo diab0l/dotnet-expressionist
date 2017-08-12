@@ -48,7 +48,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExpressionReducerTests.cs" />
+    <Compile Include="ExpressionSimplifierTests.cs" />
+    <Compile Include="NodeMatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,6 +3,9 @@
 
     [Flags]
     public enum Simplification {
+        /// <summary>
+        ///     
+        /// </summary>
         Uncast
     }
 }

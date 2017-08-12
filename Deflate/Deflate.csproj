@@ -43,6 +43,7 @@
     <Compile Include="ExpressionSimplifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Simplification.cs" />
+    <Compile Include="Visitors\UncastVisitor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

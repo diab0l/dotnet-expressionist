@@ -1,43 +1,25 @@
 ﻿namespace Expressionist.Deflate {
     using System.Linq.Expressions;
 
-    public class ExpressionSimplifier : ExpressionVisitor {
-        private readonly Simplification kinds;
-        
-        public ExpressionSimplifier(Simplification kinds) {
-            this.kinds = kinds;
-        }
-
-        protected override Expression VisitMember(MemberExpression node) {
-            var body = node.Expression;
-            var member = node.Member;
-
-            if (!(body is UnaryExpression)) {
-                return base.VisitMember(node);
-            }
-
-            if (body.NodeType != ExpressionType.Convert) {
-                return base.VisitMember(node);
-            }
-
-            var convExpr = body as UnaryExpression;
-            var baseType = convExpr.Type;
-            var type = convExpr.Operand.Type;
-
-            if (baseType.IsAssignableFrom(type)) {
-                var operand = base.Visit(convExpr.Operand);
-
-                return Expression.MakeMemberAccess(operand, member);
-            }
-
-            body = base.Visit(body);
-            return Expression.MakeMemberAccess(body, member);
-        }
-
+    /// <summary>
+    ///     Simplifies an <see cref="Expression"/>.
+    /// </summary>
+    public class ExpressionSimplifier {
+        /// <summary>
+        ///     Simplify <paramref name="expr"/> with the selected simplicifaction <paramref name="kinds"/>.
+        /// </summary>
+        /// <typeparam name="T">The type of the expression.</typeparam>
+        /// <param name="expr">The source expression.</param>
+        /// <param name="kinds">The kinds of simplification to apply.</param>
+        /// <returns>The resulting expression after applying the selected simpliciation kinds.</returns>
         public static T Simplify<T>(T expr, Simplification kinds) where T : Expression {
-            var visitor = new ExpressionSimplifier(kinds);
+            var acc = expr;
 
-            return (T)visitor.Visit(expr);
+            if (kinds.HasFlag(Simplification.Uncast)) {
+                acc = (T)new UncastVisitor().Visit(acc);
+            }
+
+            return acc;
         }
     }
 }
